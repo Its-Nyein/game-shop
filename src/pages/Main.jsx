@@ -1,10 +1,12 @@
 import React from "react";
 import "./main.css";
+import SlideMenu from "../components/SlideMenu";
 
 function Main() {
   return (
     <main>
-      <h1>Main</h1>
+      <SlideMenu />
+      <div className="banner"></div>
     </main>
   );
 }

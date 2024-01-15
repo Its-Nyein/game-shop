@@ -1,0 +1,89 @@
+.slideMenu {
+    width: 20%;
+    height: 100%;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background: var(--bgColor);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.slideMenu .logo {
+    font-family: 'Bauhaus 93';
+    position: relative;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+    font-size: 3.4em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.slideMenu .nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.slideMenu .nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    background: var(--bgColor);
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.slideMenu .nav li a:hover, 
+.slideMenu .nav li a.active {
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.slideMenu .social {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.slideMenu .social li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.slideMenu .social li a:hover {
+    color: var(--secondary);
+}
+
+.slideMenu .social li .share {
+    background: var(--secondary);
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.slideMenu .social li .share:hover {
+    color: var(--primary);
+}
