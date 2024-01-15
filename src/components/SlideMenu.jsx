@@ -3,11 +3,11 @@ import "./slideMenu.css";
 import NavListItem from "./NavListItem";
 import NavListData from "../data/NavListData";
 
-function SlideMenu() {
+function SlideMenu({ active }) {
   const [navData, setNavData] = useState(NavListData);
 
   return (
-    <div className="slideMenu">
+    <div className={`slideMenu ${active ? "active" : undefined}`}>
       <a href="#" className="logo">
         <i className="bi bi-controller"></i>
         <span className="brand">Play</span>
