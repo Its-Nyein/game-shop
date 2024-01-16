@@ -6,6 +6,16 @@ import NavListData from "../data/NavListData";
 function SlideMenu({ active }) {
   const [navData, setNavData] = useState(NavListData);
 
+  const handleNavOnClick = (id) => {
+    console.log(id);
+    const newNavData = navData.map((nav) => {
+      nav.active = false;
+      if (nav.id === id) nav.active = true;
+      return nav;
+    });
+    setNavData(newNavData);
+  };
+
   return (
     <div className={`slideMenu ${active ? "active" : undefined}`}>
       <a href="#" className="logo">
@@ -14,7 +24,11 @@ function SlideMenu({ active }) {
       </a>
       <ul className="nav">
         {navData.map((item) => (
-          <NavListItem key={item.id} item={item} />
+          <NavListItem
+            key={item.id}
+            item={item}
+            navOnClick={handleNavOnClick}
+          />
         ))}
       </ul>
       <ul className="social">
