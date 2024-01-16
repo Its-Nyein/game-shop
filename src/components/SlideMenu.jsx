@@ -3,17 +3,17 @@ import "./slideMenu.css";
 import NavListItem from "./NavListItem";
 import NavListData from "../data/NavListData";
 
-function SlideMenu({ active }) {
+function SlideMenu({ active, sectionActive }) {
   const [navData, setNavData] = useState(NavListData);
 
-  const handleNavOnClick = (id) => {
-    console.log(id);
+  const handleNavOnClick = (id, target) => {
     const newNavData = navData.map((nav) => {
       nav.active = false;
       if (nav.id === id) nav.active = true;
       return nav;
     });
     setNavData(newNavData);
+    sectionActive(target);
   };
 
   return (
