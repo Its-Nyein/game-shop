@@ -4,20 +4,8 @@ import filterListData from "../data/filterListData";
 import GameCard from "../components/GameCard";
 
 function Categories({ games, reference }) {
-  const [aGames, setAGames] = useState([]);
-
+  const [aGames, setAGames] = useState(games);
   const [filters, setFilters] = useState(filterListData);
-
-  const fetchData = () => {
-    fetch("http://localhost:3000/api/gamesData.json")
-      .then((res) => res.json())
-      .then((data) => setAGames(data))
-      .catch((e) => console.log(e.message));
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   const handleFilterGames = (category) => {
     const newFilter = filters.map((filter) => {
