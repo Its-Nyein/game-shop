@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useContext } from "react";
 import "./main.css";
 import SlideMenu from "../components/SlideMenu";
 import Header from "./Header";
@@ -6,8 +6,10 @@ import Home from "./Home";
 import Categories from "./Categories";
 import Library from "./Library";
 import Bag from "./Bag";
+import { AppContext } from "../App";
 
 function Main() {
+  const { library, bag } = useContext(AppContext);
   const [active, setActive] = useState(false);
   const [games, setGames] = useState([]);
 
@@ -70,10 +72,18 @@ function Main() {
       <div className={`banner ${active ? "active" : undefined}`}>
         <Header toggleHandle={handleToggleActive} />
         <div className="container-fluid">
-          <Home games={games} reference={homeRef} />
-          <Categories games={games} reference={categoriesRef} />
-          <Library games={games} reference={libraryRef} />
-          <Bag games={games} reference={bagRef} />
+          {games && games.length > 0 && (
+            <>
+              <Home games={games} reference={homeRef} />
+              <Categories games={games} reference={categoriesRef} />
+              <Library games={library} reference={libraryRef} />
+              <Bag games={bag} reference={bagRef} />
+            </>
+          )}
+          {/* loading data ->
+              called protection checking when we loading the data and pass it to the 
+              sub component it can be empty array so we checked the protection.          
+          */}
         </div>
       </div>
     </main>
