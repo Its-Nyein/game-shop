@@ -1,0 +1,51 @@
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+    margin: 20px 0 30px 0;
+    padding: 0;
+}
+
+.filters li {
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.filters li:hover,
+.filters li.active {
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.search {
+    width: 300px;
+    height: 50px;
+    display: inline-flex;
+    color: #9c9c9c;
+    gap: 15px;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.search input {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+}
+
+.search input:focus {
+    color: #fff;
+}
+
+.search input::placeholder {
+    color: #9c9c9c;
+}
