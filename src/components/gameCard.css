@@ -110,6 +110,7 @@
     transition: 0.3s;
 }
 
-.gameCard .addBag:hover {
+.gameCard .addBag:hover,
+.gameCard .addBag.active {
     background: var(--primary);
 }

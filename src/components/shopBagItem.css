@@ -1,0 +1,26 @@
+.shopBagItem {
+    margin-bottom: 20px;
+}
+
+.shopBagItem th, .shopBagItem td {
+    background: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.shopBagItem img {
+    width: 120px;
+    height: 75px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.shopBagItem a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.shopBagItem a:hover {
+    color: rgb(173, 41, 41);
+}
