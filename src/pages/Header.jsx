@@ -25,8 +25,8 @@ function Header({ toggleHandle }) {
             <img src={userImg} alt="User Img" />
           </a>
           <div className="user-details">
-            <span>User Name</span>
-            <a href="#">View Profile</a>
+            <span>It&apos;Nyeinn</span>
+            <a href="https://github.com/Its-Nyein">View Profile</a>
           </div>
         </div>
       </div>
