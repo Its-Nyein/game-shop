@@ -7,6 +7,7 @@ import Categories from "./Categories";
 import Library from "./Library";
 import Bag from "./Bag";
 import { AppContext } from "../App";
+import gameData from "../data/gamesData";
 
 function Main() {
   const { library, bag } = useContext(AppContext);
@@ -55,15 +56,15 @@ function Main() {
     });
   };
 
-  const fetchData = () => {
-    fetch("http://localhost:3000/api/gamesData.json")
-      .then((res) => res.json())
-      .then((data) => setGames(data))
-      .catch((e) => console.log(e.message));
-  };
+  // const fetchData = () => {
+  //   fetch("http://localhost:3000/api/gamesData.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setGames(data))
+  //     .catch((e) => console.log(e.message));
+  // };
 
   useEffect(() => {
-    fetchData();
+    setGames(gameData);
   }, []);
 
   return (
