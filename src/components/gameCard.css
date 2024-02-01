@@ -114,3 +114,50 @@
 .gameCard .addBag.active {
     background: var(--primary);
 }
+
+@media(max-width: 450px) {
+.gameCard {
+    height: 350px;
+    padding: 10px;
+}
+
+.gameCard .like {
+    top: 7px;
+    right: 5px;
+}
+
+.gameCard .game-feature .gameLevel {
+    padding: 4px 8px;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+}
+
+.gameCard .game-title {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.gameCard .game-price .discount {
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.gameCard .game-price .prev-price {
+    text-decoration-thickness: 2px;
+    font-size: 0.6rem;
+}
+
+.gameCard .game-price .current-price {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.gameCard .addBag {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 20px 0;
+    font-size: 1rem;
+}
+}

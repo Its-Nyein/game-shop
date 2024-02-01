@@ -1,14 +1,24 @@
 section.home .sectionTitle {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .viewMore {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: 0.3s;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.3s;
 }
 
 .viewMore:hover {
-    color: var(--secondary);
+  color: var(--secondary);
+}
+
+@media (max-width: 550px) {
+  section.home .sectionTitle {
+    font-size: 1rem;
+  }
+  .viewMore {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
 }

@@ -49,3 +49,20 @@
 .search input::placeholder {
     color: #9c9c9c;
 }
+
+@media(max-width: 580px) {
+.filters {
+    gap: 10px;
+    margin: 15px 0 25px 0;
+    }
+.filters li {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+}
+.search {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+}

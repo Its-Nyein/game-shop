@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Leagues of Legends",
-        "description": "League of Legends, commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games. Inspired by Defense of the Ancients, a custom map for Warcraft III, Riot's founders sought to develop a stand-alone game in the same genre.",
+        "description": "League of Legends, commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games. Inspired by Defense of the Ancients, a custom map for Warcraft III.",
         "level": "Median",
         "category": "MOBA",
         "rating": 4,
@@ -30,7 +30,7 @@
     {
         "id": 3,
         "title": "Apex Legends",
-        "description": "Apex Legends is a free-to-play battle royale-hero shooter game developed by Respawn Entertainment and published by Electronic Arts. It was released for PlayStation 4, Windows, and Xbox One in February 2019, for Nintendo Switch in March 2021, and for PlayStation 5 and Xbox Series X/S in March 2022.",
+        "description": "Apex Legends is a free-to-play battle royale-hero shooter game developed by Respawn Entertainment and published by Electronic Arts. It was released for PlayStation 4, Windows, and Xbox One in February 2019",
         "level": "High",
         "category": "Battle",
         "rating": 4,
@@ -58,7 +58,7 @@
     {
         "id": 5,
         "title": "Volarant",
-        "description": "Valorant is a free-to-play first-person tactical hero shooter developed and published by Riot Games, for Windows. Teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by a release on June 2, 2020.",
+        "description": "Valorant is a free-to-play first-person tactical hero shooter developed and published by Riot Games, for Windows. Teased under the codename Project A in October 2019.",
         "level": "Median",
         "category": "Shooting",
         "rating": 4,
@@ -156,7 +156,7 @@
     {
         "id": 12,
         "title": "PUBG",
-        "description": "PUBG: PlayerUnknown Battlegrounds is a battle royale game developed by PUBG Studios and published by Krafton. The game, which was inspired by the Japanese film Battle Royale, is based on previous mods created by Brendan 'PlayerUnknown' Greene for other games.",
+        "description": "PUBG: PlayerUnknown Battlegrounds is a battle royale game developed by PUBG Studios and published by Krafton. The game, which was inspired by the Japanese film Battle Royale.",
         "level": "Median",
         "category": "Battle",
         "rating": 3,

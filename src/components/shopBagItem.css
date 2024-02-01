@@ -24,3 +24,10 @@
 .shopBagItem a:hover {
     color: rgb(173, 41, 41);
 }
+
+@media(max-width: 750px) {
+.shopBagItem img {
+        width: 100px;
+        height: 60px;
+    }
+}

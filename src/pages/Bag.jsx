@@ -28,26 +28,24 @@ function Bag({ games, reference }) {
       ) : (
         <>
           <div className="row">
-            <div className="table-resopnsive">
-              <table className="shopBagTable table table-borderless align-middle">
-                <thead>
-                  <tr>
-                    <th scope="col">No.</th>
-                    <th scope="col">Preview</th>
-                    <th scope="col">Game</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Discount</th>
-                    <th scope="col">Payment</th>
-                    <th scope="col">Remove</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {games.map((game, index) => (
-                    <ShopBagItem key={game.id} index={index} game={game} />
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <table className="shopBagTable table table-borderless align-middle">
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">Preview</th>
+                  <th scope="col">Game</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Discount</th>
+                  <th scope="col">Payment</th>
+                  <th scope="col">Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                {games.map((game, index) => (
+                  <ShopBagItem key={game.id} index={index} game={game} />
+                ))}
+              </tbody>
+            </table>
           </div>
           <div className="row d-flex justify-content-between mt-5">
             <div className="col-lg-2 d-flex align-items-center justify-content-start">
