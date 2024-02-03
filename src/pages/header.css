@@ -92,3 +92,70 @@ header {
   text-decoration: none;
   font-size: 0.6rem;
 }
+
+@media screen and (max-width: 630px) {
+  .menu {
+    font-size: 1.5rem;
+  }
+
+  .userItems {
+    gap: 15px;
+  }
+
+  .userItems .icon {
+    font-size: 1.3rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .userItems .avatar {
+    width: 120px;
+    height: 50px;
+    padding: 10px 5px;
+    gap: 10px;
+  }
+
+  .userItems .avatar img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .userItems .avatar .user-details span {
+    font-size: 0.5rem;
+  }
+
+  .userItems .avatar .user-details a {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .userItems .avatar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .menu {
+    font-size: 1.2rem;
+  }
+
+  .userItems {
+    gap: 10px;
+  }
+
+  .userItems .icon {
+    font-size: 1.1rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  .userItems .icon .like,
+  .userItems .icon .bag {
+    bottom: 7px;
+    font-size: 0.5rem;
+    height: 12px;
+    width: 12px;
+    padding: 1px;
+  }
+}
