@@ -1,14 +1,8 @@
 .gameCard .game-rating {
-    font-size: 1.1rem;
-    color: var(--secondary);
+  font-size: 1.1rem;
+  color: var(--secondary);
 }
 
 .gameCard .game-rating i {
-    margin-left: 2px;
-}
-
-@media(max-width: 450px) {
-    .gameCard .game-rating {
-        font-size: 0.8rem;
-    }
+  margin-left: 2px;
 }

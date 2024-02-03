@@ -92,15 +92,3 @@ header {
   text-decoration: none;
   font-size: 0.6rem;
 }
-
-@media (max-width: 560px) {
-  .userItems .avatar {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-}
