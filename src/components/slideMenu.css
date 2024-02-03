@@ -117,3 +117,102 @@
 .slideMenu.active .social li a {
   font-size: 1em;
 }
+
+@media screen and (max-width: 1100px) {
+  .slideMenu {
+    width: 24%;
+  }
+
+  .slideMenu .nav li a {
+    padding: 8px 15px;
+  }
+
+  .slideMenu.active .nav li a {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .brand {
+    font-size: 40px;
+  }
+
+  .slideMenu .nav li a {
+    font-size: 0.8em;
+  }
+
+  .slideMenu .logo .bi {
+    gap: 10px;
+    font-size: 0.7em;
+  }
+
+  .slideMenu .social li a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .slideMenu {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .brand {
+    font-size: 30px;
+  }
+
+  .slideMenu .nav li a {
+    font-size: 0.6em;
+  }
+
+  .slideMenu .logo .bi {
+    gap: 10px;
+    font-size: 0.6em;
+  }
+
+  .slideMenu .social li a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .slideMenu .nav li a {
+    border-radius: 15px;
+  }
+
+  .slideMenu.active .nav li a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .brand {
+    font-size: 25px;
+  }
+
+  .slideMenu .nav li a {
+    font-size: 0.5em;
+  }
+
+  .slideMenu .logo .bi {
+    gap: 10px;
+    font-size: 0.6em;
+  }
+
+  .slideMenu .social li a {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .slideMenu {
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .slideMenu .social li a {
+    font-size: 0.5rem;
+  }
+}
