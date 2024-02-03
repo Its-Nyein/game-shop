@@ -1,195 +1,227 @@
 .swiper {
-    width: 90%;
-    padding-bottom: 30px;
+  width: 90%;
+  padding-bottom: 30px;
 }
 
 .swiper-slide {
-    width: 530px;
-    height: 280px;
+  width: 530px;
+  height: 280px;
 }
 
 .gameSlider {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    padding: 30px;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  overflow: hidden;
 }
 
 .gameSlider::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 30px !important;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 30px !important;
 }
 
 .swiper-slide img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 30px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px !important;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    backdrop-filter: blur(20px);
-    bottom: 0 !important;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  backdrop-filter: blur(20px);
+  bottom: 0 !important;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    font-size: 1.5rem;
-    color: #fff;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 .gameSlider .game-content {
-    position: absolute;
-    width: 60%;
-    bottom: 20px;
-    z-index: 1000;
+  position: absolute;
+  width: 60%;
+  bottom: 20px;
+  z-index: 1000;
 }
 
 .gameSlider .game-content h2 {
-    font-family: 'Bauhaus 93';
-    font-size: 3rem;
+  font-family: "Bauhaus 93";
+  font-size: 3rem;
 }
 
 .gameSlider .game-content p {
-    color: #e7e4e4;
-    font-size: 0.8rem;
+  color: #e7e4e4;
+  font-size: 0.8rem;
 }
 
 .gameSlider .game-content .buttons {
-    display: inline-flex;
-    align-items: center;
-    gap: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .gameSlider .game-content .buttons a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .gameSlider .game-content .buttons .orderBtn {
-    background: var(--secondary);
-    border-radius: 10px;
-    padding: 10px 20px;
+  background: var(--secondary);
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
 .gameSlider .game-content .buttons .playBtn {
-    height: 50px;
-    width: 50px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
+  height: 50px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
 }
 
 .playBtn .play {
-    display: block;
+  display: block;
 }
 
 .playBtn .pause {
-    display: none;
+  display: none;
 }
 
 .swiper-slide.swiper-slide-active .playBtn.active .play {
-    display: none;
+  display: none;
 }
 
 .swiper-slide.swiper-slide-active .playBtn.active .pause {
-    display: block;
+  display: block;
 }
 
 .swiper-slide .video iframe {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 85%;
-    height: 75%;
-    background: var(--secondary);
-    border-radius: 0 30px 0 30px !important;
-    border: 5px solid transparent;
-    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
-            5px 5px 15px rgba(0, 0, 0, 0.35);
-    z-index: 1100;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    transform: scale(0);
-    transform-origin: top right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 85%;
+  height: 75%;
+  background: var(--secondary);
+  border-radius: 0 30px 0 30px !important;
+  border: 5px solid transparent;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+  z-index: 1100;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: scale(0);
+  transform-origin: top right;
 }
 
 .swiper-slide.swiper-slide-active .video.active iframe {
-    visibility: visible;
-    opacity: 1;
-    transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
 }
 
-@media(max-width: 800px) {
-    .swiper {
-        width: 85%;
-    }
-    .swiper-slide {
-        width: 100%;
-        height: 200px;
-    }
+@media (max-width: 800px) {
+  .swiper {
+    width: 85%;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 200px;
+  }
 
-.gameSlider .game-content {
+  .gameSlider .game-content {
     position: absolute;
     width: 80%;
     bottom: 20px;
     z-index: 1000;
-}
+  }
 
-.gameSlider .game-content h2 {
+  .gameSlider .game-content h2 {
     font-size: 2rem;
-}
+  }
 
-.gameSlider .game-content p {
+  .gameSlider .game-content p {
     font-size: 0.6rem;
-}
+  }
 }
 
-@media(max-width: 560px) {
-    .swiper {
-            width: 100%;
-        }
-    
-    .swiper-slide {
-        width: 100%;
-        height: 250px;
-        }
+@media (max-width: 560px) {
+  .swiper {
+    width: 100%;
+  }
 
-.gameSlider .game-content {
+  .swiper-slide {
+    width: 100%;
+    height: 250px;
+  }
+
+  .gameSlider .game-content {
     width: 80%;
-}
+  }
 
-.gameSlider .game-content .buttons .orderBtn {
+  .gameSlider .game-content .buttons .orderBtn {
     font-size: 10px;
-}
+  }
 
-.gameSlider .game-content .buttons .playBtn {
+  .gameSlider .game-content .buttons .playBtn {
     height: 40px;
     width: 40px;
+  }
 }
+
+@media screen and (max-width: 450px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    bottom: 0 !important;
+  }
+
+  .gameSlider .game-content .buttons .orderBtn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 8px;
+  }
+
+  .gameSlider .game-content .buttons .playBtn {
+    height: 40px;
+    width: 40px;
+    font-size: 2.2rem;
+  }
 }
