@@ -40,3 +40,50 @@
   box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.35);
 }
+
+@media screen and (max-width: 900px) {
+  .shopBagTable thead tr th {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .row {
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .itemCount {
+    font-size: 1rem;
+  }
+
+  .payment {
+    font-size: 1rem;
+    gap: 30px;
+  }
+
+  .payment a {
+    padding: 8px 15px;
+    border-radius: 15px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .payment {
+    font-size: 0.8rem;
+    gap: 30px;
+  }
+
+  .payment a {
+    padding: 8px 15px;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  section h2 {
+    font-size: 15px;
+  }
+}

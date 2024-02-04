@@ -25,3 +25,18 @@
 .shopBagItem a:hover {
   color: rgb(173, 41, 41);
 }
+
+@media screen and (max-width: 800px) {
+  .shopBagItem th,
+  .shopBagItem td {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .shopBagItem img {
+    width: 100px;
+    height: 55px;
+    border-radius: 8px;
+  }
+}

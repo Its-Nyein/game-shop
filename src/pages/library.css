@@ -1,0 +1,5 @@
+@media screen and (max-width: 380px) {
+  .row h2 {
+    font-size: 15px;
+  }
+}
