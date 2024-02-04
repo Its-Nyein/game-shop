@@ -267,3 +267,10 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .slideMenu.active {
+    width: 20%;
+    height: 95%;
+  }
+}

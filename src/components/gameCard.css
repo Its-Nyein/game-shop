@@ -114,3 +114,57 @@
 .gameCard .addBag.active {
   background: var(--primary);
 }
+
+@media screen and (max-width: 380px) {
+  .gameCard .game-feature .gameLevel {
+    font-size: 10px;
+  }
+
+  .gameCard .game-title {
+    font-size: 0.9rem;
+  }
+
+  .gameCard .game-price .discount {
+    font-size: 0.8rem;
+  }
+
+  .gameCard .game-price .prev-price {
+    text-decoration-thickness: 2px;
+    font-size: 0.7rem;
+  }
+
+  .gameCard .game-price .current-price {
+    font-size: 0.8rem;
+  }
+
+  .gameCard .addBag {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 20px 0;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .gameCard .like {
+    top: 18px;
+    right: 10px;
+    width: 37px;
+    height: 37px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .gameCard {
+    padding: 20px 10px;
+    width: auto;
+    height: 350px;
+  }
+
+  .gameCard .game-feature .gameLevel {
+    font-size: 8px;
+    padding: 3px 8px;
+    letter-spacing: 0.7px;
+  }
+}

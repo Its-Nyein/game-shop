@@ -6,3 +6,9 @@
 .gameCard .game-rating i {
   margin-left: 2px;
 }
+
+@media screen and (max-width: 340px) {
+  .gameCard .game-rating {
+    font-size: 0.8rem;
+  }
+}
