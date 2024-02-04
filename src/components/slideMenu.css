@@ -164,7 +164,7 @@
   }
 
   .slideMenu .nav li a {
-    font-size: 0.6em;
+    gap: 10px;
   }
 
   .slideMenu .logo .bi {
@@ -193,7 +193,7 @@
   }
 
   .slideMenu .nav li a {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
 
   .slideMenu .logo .bi {
