@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   transition: 1s;
+  z-index: 10000;
 }
 
 .slideMenu .logo {
@@ -214,5 +215,55 @@
 @media screen and (max-width: 620px) {
   .slideMenu .social li a {
     font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slideMenu .nav li span {
+    display: none;
+  }
+
+  .brand {
+    display: none;
+  }
+
+  .slideMenu {
+    position: fixed;
+    transform: translateX(-150%);
+  }
+
+  .slideMenu.active {
+    width: 20%;
+    height: 91%;
+    transform: translateX(0);
+    transition-delay: 0.3s;
+  }
+
+  .slideMenu .nav li a {
+    padding: 5px 10px;
+  }
+
+  .slideMenu.active .nav {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slideMenu .social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .slideMenu.active {
+    width: 23%;
+  }
+
+  .slideMenu .nav li a {
+    padding: 4px 8px;
+    border-radius: 10px;
+  }
+
+  .slideMenu .social {
+    display: none;
   }
 }

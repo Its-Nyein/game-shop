@@ -159,3 +159,24 @@ header {
     padding: 1px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .menu.active {
+    transform: translateX(100px);
+    transition-delay: 0.5s;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu.active {
+    transform: translateX(70px);
+    transition-delay: 0.5s;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .menu.active {
+    transform: translateX(50px);
+    transition-delay: 0.5s;
+  }
+}

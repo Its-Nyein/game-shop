@@ -144,3 +144,114 @@
   opacity: 1;
   transform: scale(1);
 }
+
+@media screen and (max-width: 950px) {
+  .swiper-slide {
+    width: 480px;
+    height: 260px;
+  }
+
+  .gameSlider .game-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .swiper-slide {
+    width: 430px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .swiper-slide {
+    width: 380px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .swiper-slide {
+    width: 330px;
+    height: 250px;
+  }
+
+  .gameSlider .game-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .gameSlider .game-content p {
+    font-size: 0.6rem;
+  }
+
+  .gameSlider .game-content .buttons {
+    gap: 10px;
+  }
+
+  .gameSlider .game-content .buttons a {
+    font-size: 10px;
+  }
+
+  .gameSlider .game-content .buttons .playBtn {
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .swiper-slide {
+    width: 100%;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .gameSlider .game-content h2 {
+    font-size: 1rem;
+  }
+
+  .gameSlider .game-content .buttons .orderBtn {
+    padding: 7px 12px;
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .gameSlider .game-content p {
+    font-size: 0.5rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 35px;
+    width: 35px;
+  }
+
+  .gameSlider .game-content .buttons .orderBtn {
+    font-size: 7px;
+  }
+
+  .gameSlider .game-content .buttons .playBtn {
+    height: 30px;
+    width: 30px;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gameSlider .game-content .buttons .orderBtn {
+    font-size: 5px;
+  }
+
+  .gameSlider .game-content .buttons .playBtn {
+    height: 30px;
+    width: 30px;
+    font-size: 1.7rem;
+  }
+}

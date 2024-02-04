@@ -99,3 +99,16 @@ section.active {
     width: 72%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+  .banner {
+    width: 100%;
+  }
+
+  .banner.active {
+    width: 100%;
+  }
+}

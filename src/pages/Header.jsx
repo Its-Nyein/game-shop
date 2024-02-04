@@ -3,12 +3,16 @@ import "./header.css";
 import userImg from "../images/user_img.jpg";
 import { AppContext } from "../App";
 
-function Header({ toggleHandle }) {
+function Header({ toggleHandle, active }) {
   const { library, bag } = useContext(AppContext);
 
   return (
     <header>
-      <a href="#" className="menu" onClick={toggleHandle}>
+      <a
+        href="#"
+        className={`menu ${active ? "active" : undefined}`}
+        onClick={toggleHandle}
+      >
         <i class="bi bi-sliders"></i>
       </a>
       <div className="userItems">

@@ -7,8 +7,35 @@ section.home .sectionTitle {
   color: #fff;
   font-size: 1.2rem;
   transition: 0.3s;
+  padding-bottom: 10px;
 }
 
 .viewMore:hover {
   color: var(--secondary);
+}
+
+@media screen and (max-width: 500px) {
+  section.home .sectionTitle {
+    font-size: 15px;
+  }
+
+  .viewMore {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section.home .sectionTitle {
+    font-size: 12px;
+  }
+
+  .viewMore {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .viewMore {
+    font-size: 0.6rem;
+  }
 }
