@@ -115,6 +115,15 @@
   background: var(--primary);
 }
 
+@media screen and (max-width: 720px) {
+  .gameCard {
+    width: auto;
+    height: 400px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.1),
+      4px 4px 10px rgba(0, 0, 0, 0.35);
+  }
+}
+
 @media screen and (max-width: 380px) {
   .gameCard .game-feature .gameLevel {
     font-size: 10px;
