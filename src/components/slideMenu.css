@@ -234,7 +234,7 @@
 
   .slideMenu.active {
     width: 20%;
-    height: 91%;
+    height: 93%;
     transform: translateX(0);
     transition-delay: 0.3s;
   }

@@ -33,6 +33,7 @@
   border-radius: 10px;
   box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.35);
+  margin-bottom: 20px;
 }
 
 .search input {
@@ -48,4 +49,59 @@
 
 .search input::placeholder {
   color: #9c9c9c;
+}
+
+@media screen and (max-width: 700px) {
+  .filters li {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search {
+    width: 250px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .filters li {
+    font-size: 10px;
+    padding: 8px 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search {
+    width: 200px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .filters {
+    gap: 10px;
+    margin: 0 0 30px 0;
+  }
+  .filters li {
+    font-size: 8px;
+    padding: 5px 12px;
+  }
+
+  .filters li:hover,
+  .filters li.active {
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 0.1),
+      2px 2px 8px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search {
+    width: 150px;
+  }
+
+  .search input {
+    font-size: 0.8rem;
+  }
 }

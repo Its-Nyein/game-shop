@@ -147,15 +147,6 @@
 }
 
 @media screen and (max-width: 340px) {
-  .gameCard .like {
-    top: 18px;
-    right: 10px;
-    width: 37px;
-    height: 37px;
-  }
-}
-
-@media screen and (max-width: 340px) {
   .gameCard {
     padding: 20px 10px;
     width: auto;
@@ -166,5 +157,12 @@
     font-size: 8px;
     padding: 3px 8px;
     letter-spacing: 0.7px;
+  }
+
+  .gameCard .like {
+    top: 18px;
+    right: 8px;
+    width: 37px;
+    height: 37px;
   }
 }
